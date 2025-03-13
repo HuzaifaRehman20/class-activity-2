@@ -11,6 +11,9 @@ COPY src ./src
 # Install dependencies
 RUN npm install
 
+# Copy the entire frontend app (including public/index.html)
+COPY . .
+
 # Expose frontend port
 EXPOSE 3000
 
